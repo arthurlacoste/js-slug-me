@@ -1,0 +1,31 @@
+{
+  "name": "slugme",
+  "version": "1.0.0",
+  "description": "Convert a string into a string good looking for URLs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo --fix && ava test/unicorn.js  --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurlacoste/js-slug-me.git"
+  },
+  "keywords": [
+    "slug",
+    "slugify",
+    "URL",
+    "rewrite",
+    "binaries",
+    "string",
+    "edit"
+  ],
+  "author": "Arthur Lacoste <arthak@gmail.com>",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/arthurlacoste/js-slug-me/issues"
+  },
+  "homepage": "https://github.com/arthurlacoste/js-slug-me#readme",
+  "devDependencies": {
+    "ava": "*"
+  }
+}
