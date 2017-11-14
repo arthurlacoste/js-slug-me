@@ -7,16 +7,17 @@
 This is a simple javascript function that returns slugified string.
 The slugification is useful for URL build from accentuated strings.
 
- It replaces accentuated chars to non-accentuated and spaces by the minus sign. All other chars (non-alphanumeric) are removed or replaced.
+It replaces accentuated chars to non-accentuated and spaces by the minus sign. All other chars (non-alphanumeric) are removed or replaced.
 
+Work both in Node & browser environment.
 
-# Install
+## Install
 
 ```
 npm i slugme -S
 ```
 
-# Usage
+## Usage
 
 ```js
 const slugme = require('slugme');
@@ -28,13 +29,37 @@ console.log(result);
 
 ```
 
-A one-page browser version [is available here](test/browser.htm).
+## Browser
 
-# Misc
+Example:
+
+```html
+
+<input value="Être en été est à mi-chemin de noël" id="slug-this" onkeyup="slugLive('slug-this','slugme');" />
+Slug : «&nbsp;<span id="slugme"></span>&nbsp;»
+
+<script src="../index.js"></script>
+
+<script type="text/javascript">
+
+const slugLive = function (input,output) {
+const valueIn = document.getElementById(input).value;
+var idOut = document.getElementById(output);
+idOut.innerHTML = slugme(valueIn);
+}
+
+slugLive('slug-this','slugme');
+
+</script>
+
+
+```
+
+## Misc
 
 - [Golang version](https://github.com/metal3d/go-slugify)
 
-# Licence
+## Licence
 
 MIT
 
