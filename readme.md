@@ -43,9 +43,9 @@ Slug : «&nbsp;<span id="slugme"></span>&nbsp;»
 <script type="text/javascript">
 
 const slugLive = function (input,output) {
-const valueIn = document.getElementById(input).value;
-var idOut = document.getElementById(output);
-idOut.innerHTML = slugme(valueIn);
+  const valueIn = document.getElementById(input).value;
+  var idOut = document.getElementById(output);
+  idOut.innerHTML = slugme(valueIn);
 }
 
 slugLive('slug-this','slugme');
